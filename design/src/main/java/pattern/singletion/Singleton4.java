@@ -1,0 +1,23 @@
+package pattern.singletion;
+
+/**
+ * 懒汉式：双重检查锁
+ */
+public class Singleton4 {
+
+    private Singleton4() {
+    }
+
+    private static volatile Singleton4 instance;
+
+    public static Singleton4 getInstance() {
+        if (instance == null) {
+            synchronized (Singleton4.class) {
+                if (instance == null) {
+                    instance = new Singleton4();
+                }
+            }
+        }
+        return instance;
+    }
+}
