@@ -1,4 +1,4 @@
-package pattern.singletion;
+package pattern.singleton;
 
 /**
  * 懒汉式：静态内部类方式

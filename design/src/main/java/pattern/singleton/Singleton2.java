@@ -1,4 +1,4 @@
-package pattern.singletion;
+package pattern.singleton;
 
 /**
  * 饿汉式：静态代码块
